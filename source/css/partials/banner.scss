@@ -1,0 +1,42 @@
+.banner{
+  position: relative;
+  .show{
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    height: 500px;
+    background: $main-color;
+    color: $theme-font-color;
+    text-align: center;
+    div.banner-title{
+      position: absolute;
+      left: 18%;
+      top: 30%;
+      margin: 0;
+      font-family: $art-font;
+      .post-title{
+        font-size: 36px;
+        font-family: $global-serif-font-family;
+        .post-tags a{
+          display: inline-block;
+          text-decoration: none;
+          color: $theme-font-color;
+          margin: 10px;
+          border: 1px solid $theme-font-color;
+          border-radius: 2px;
+          padding: 0 10px;
+          font-size: 12px;
+          transition: all .3s;
+          &:before{
+            content: "#";
+            font-size: 16px;
+          }
+          &:hover{
+            background: $theme-font-color;
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+}

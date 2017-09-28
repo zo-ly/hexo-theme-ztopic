@@ -1,0 +1,125 @@
+article#post-excerpt{
+  header{
+    text-align: center;
+    h1{
+      font-size: 30px;
+      margin: 0 auto 10px;
+    }
+    a{
+      color: $main-font-color;
+      position: relative;
+      font-weight: normal;
+      &::after{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        content: "";
+        background: $main-font-color;
+        height: 2px;
+        transition: all .3s;
+      }
+      &:hover::after{
+        left: 0;
+        right: 0;
+      }
+    }
+    .post-meta{
+      color: #8a8a8a;
+      font-size: 16px;
+      margin-bottom: 30px;
+      font-weight: normal;
+    }
+  }
+  .post-tags a{
+    display: inline-block;
+    color: #34495e;
+    background: #eee;
+    margin: 10px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    padding: 0 10px;
+    font-size: 12px;
+    transition: all .3s;
+    &:before{
+      content: "#";
+      font-size: 16px;
+    }
+    &:hover{
+      transform: translateY(-5px);
+    }
+  }
+}
+article.post{
+      margin: 0 auto 30px;
+      padding: 40px 20px 20px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,.2);
+      &:last-child{
+        margin-bottom: 10px;
+      }
+      a{
+        color: #0099cc;
+        position: relative;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color .3s;
+        &:hover{
+          color: $main-red;
+        }
+      }
+      .post-meta{
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        i{
+          font-weight: normal;
+        }
+      }
+      img[alt="cover-img"]{
+        display: block;
+        width: 112%;
+        margin: 0 -6%;
+        border: 1px solid #fff;
+        box-shadow: 0 1px 3px rgba(0,0,0,.15);
+        background: #fff;
+        padding: 5px;
+      }
+      img{
+        max-width: 100%;
+      }
+      .post-tags{
+        margin-bottom: 10px;
+        a{
+          display: inline-block;
+          text-decoration: none;
+          color: $main-color;
+          margin: 5px;
+          border: 1px solid $main-color;
+          border-radius: 2px;
+          padding: 0 5px;
+          font-size: 12px;
+          &:before{
+            content: "#";
+            font-size: 16px;
+          }
+        }
+      }
+      #read-more{
+        margin: 40px 0;
+        text-align: center;
+        a{
+          font-weight: normal;
+          color: $main-font-color;
+          padding: 5px;
+          border: 1px solid $main-font-color;
+          border-radius: 2px;
+          transition: all .3s;
+          &:hover{
+            background: $main-font-color;
+            border-color: $main-font-color;
+            color: #fff;
+          }
+        }
+      }
+    }

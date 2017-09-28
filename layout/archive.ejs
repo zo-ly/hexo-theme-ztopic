@@ -1,0 +1,28 @@
+
+  <div class="archives-container">
+    <% var last; %>
+    <% page.posts.each(function(post, i){ %>
+      <% var year = post.date.year(); %>
+      <% if (last != year){ %>
+        <% if (last != null){ %>
+        </div></section>
+        <% } %>
+        <% last = year; %>
+        <section class="archive-wrap">
+          <div class="archive-year">
+            <!-- <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a> -->
+            <%= year %>
+          </div>
+          <div class="archives">
+      <% } %>
+      <div class="archive-content">
+      <a class="archive-article" href="<%= url_for(post.path) %>">
+        <span class="archive-meta"><%= date(post.date, "MM-DD") %></span>
+        <span class="archive-title"><%= post.title %></span>
+      </a>
+    </article>
+    <% }) %>
+    <% if (page.posts.length){ %>
+      </div></section>
+    <% } %>
+  </div>

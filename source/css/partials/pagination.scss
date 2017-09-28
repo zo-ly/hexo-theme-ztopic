@@ -1,0 +1,33 @@
+.pagination{
+  height: 40px;
+  margin: 0 auto;
+  font-weight: bold;
+  i{
+    font-size: 24px;
+    vertical-align: sub;
+  }
+  .next-post,
+  .next{
+    float: right;
+    color: #34495e;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .3s;
+    &:hover{
+      color: #f6695f;
+      transform: translateX(5px);
+    }
+  }
+  .prev-post,
+  .prev{
+    float: left;
+    color: #34495e;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .3s;
+    &:hover{
+      color: #f6695f;
+      transform: translateX(-5px);
+    }
+  }
+}

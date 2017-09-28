@@ -1,0 +1,27 @@
+<% if(is_post()){ %>
+  <nav class="pagination post-nav">
+    <% if(page.prev){ %>
+      <a href="<%= url_for(page.prev.path) %>">
+        <span class="prev-post"><i class="iconfont icon-back"></i><%= page.prev.title %></span>
+      </a>
+    <% } %>
+    <% if(page.next){ %>
+      <a href="<%= url_for(page.next.path) %>">
+        <span class="next-post"><%= page.next.title %><i class="iconfont icon-more"></i></span>
+      </a>
+    <% } %>
+  </nav>
+<% }else{ %>
+     <nav class="pagination">
+    <% if(page.prev){ %>
+      <a href="<%= url_for(page.prev_link) %>">
+        <span class="prev"><i class="iconfont icon-back"></i><%= __('pagination.prev') %></span>
+      </a>
+    <% } %>
+    <% if(page.next){ %>
+      <a href="<%= url_for(page.next_link) %>">
+        <span class="next"><%= __('pagination.next') %><i class="iconfont icon-more"></i></span>
+      </a>
+    <% } %>
+  </nav>
+<% } %>

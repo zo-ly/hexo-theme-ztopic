@@ -1,0 +1,25 @@
+
+  <article class="post">
+    <header>
+      <div class="post-title mobile-post-title">
+        <h1><%= page.title %></h1>
+          <div class="post-tags">
+          <% if (page.tags && page.tags.length){ %>
+            <%- list_tags(page.tags, {
+              show_count: false,
+              style: 'none',
+              separator: ' '
+            }) %>
+          <% } %>
+          </div>
+      </div>
+      <div class="post-meta">
+        <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(page.date,"YYYY-MM-DD")%></span>
+      </div>
+    </header>
+    <%- partial('partials/post/toc') %>
+    <div class="post-content">
+      <%- page.content %>
+    </div>
+    <div class="post-footer"></div>
+  </article>

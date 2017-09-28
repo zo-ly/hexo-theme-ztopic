@@ -1,0 +1,26 @@
+<footer>
+      <div class="social-links">
+        <% for(name in theme.social){ %>
+          <a href="<%- url_for(theme.social[name])%>"><i class="iconfont icon-<%= name %>"></i></a>
+        <% } %>
+      </div>
+      <div class="quote">
+        <p><%= theme.quote %></p>
+      </div>
+      <div class="copyright">
+        <p>由<a href="https://hexo.io/">Hexo</a>强力驱动|主题- <a href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a></p>
+        <p>
+          <span>
+          <% var current = date(Date.now(),'YYYY') %>
+          &copy;
+          <% if(theme.since && theme.since != current){ %>
+            <%= config.since %> - <%= current %>
+          <% }else{ %>
+            <%= current %>
+          <% } %>
+          </span>
+          <i class="iconfont icon-circle"></i>
+          <span><%= config.author %></span>
+        </p>
+      </div>
+</footer>

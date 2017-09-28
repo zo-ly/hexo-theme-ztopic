@@ -1,0 +1,36 @@
+  <section class="posts">
+    <% page.posts.each(function (post) { %>
+      <article class="post" id="post-excerpt">
+        <header>
+          <div class="post-title">
+            <h1><a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
+          </div>
+          <div class="post-meta">
+            <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(post.date,"YYYY-MM-DD")%></span>
+          </div>
+        </header>
+        <div class="post-content">
+          <!-- <%- post.excerpt %> -->
+          <!-------------->
+          <%if(post.excerpt){%>
+            <%-post.excerpt%>
+            <div id="read-more">
+              <a href="<%= url_for(post.path) %>"><%= __('posts.readmore') %></a>
+            </div>
+          <%}else{%>
+            <%- post.content %>
+          <%}%>
+          <!-------------->
+        </div>
+        <div class="post-tags">
+  		  <% if (post.tags && post.tags.length){ %>
+          <%- list_tags(post.tags, {
+            show_count: false,
+            style: 'none',
+            separator: ' '
+          }) %>
+        <% } %>
+  	  </div>
+      </article>
+    <%  }) %>
+  </section>

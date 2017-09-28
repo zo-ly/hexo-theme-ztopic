@@ -1,0 +1,61 @@
+header.site-nav{
+    display: none;
+    width: 100%;
+    min-height: 40px;
+    background: $nav-color;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    border: 1px solid transparent;
+  .nav-content{
+    max-width: $main-width;
+    margin: 0 auto;
+  }
+  .logo{
+    float: left;
+    font-size: 40px;
+    font-family: $logo-font;
+    a{
+      color: $theme-font-color;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: $theme-font-color;
+    transition: color .3s;
+    position: relative;
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      right: 50%;
+      content: "";
+      background: $theme-font-color;
+      height: 2px;
+      transition: all .3s;
+    }
+    &:hover::after{
+      left: 0;
+      right: 0;
+    }
+  }
+  .navbar{
+    ul{
+      padding: 0;
+      ;margin: 0;
+      float: right;
+      margin: 20px;
+      li{
+        display: inline-block;
+        list-style: none;
+        margin: 0 20px;
+        font-size: 18px;
+        i{
+          vertical-align: text-bottom;
+        }
+      }
+    }
+  }
+}

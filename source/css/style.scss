@@ -1,0 +1,36 @@
+@import "variables";
+body{
+  margin: 0;
+  font-size: 100%;
+  font-family: $global-serif-font-family;
+  line-height: 1.5;
+  background: #eaeaea;
+  color: $main-font-color;
+  white-space: normal;
+  word-break: break-all;
+  a{
+    color: $main-font-color;
+  }
+}
+main{
+  position: relative;
+  z-index: 8;
+  max-width: $main-width;
+  margin: -160px auto 10px;
+}
+.page{
+  background: #eaeaea;
+  height: 100%;
+}
+@import "partials/icon";
+@import "partials/mobile";
+@import "partials/header";
+@import "partials/banner";
+@import "partials/post";
+@import "partials/toc";
+@import "partials/code";
+@import "partials/pagination";
+@import "partials/footer";
+@import "partials/back-to-top";
+@import "partials/archive";
+@import "partials/media";

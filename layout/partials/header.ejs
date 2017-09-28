@@ -1,0 +1,16 @@
+<header class="site-nav">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="<%- url_for(theme.menu["home"]) %>"><%= theme.logo %></a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <% for(name in theme.menu) { %>
+              <li class="menu-item">
+                <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><i class="iconfont icon-<%= name %>"></i><%= __('menu.' + name) %></a>
+              </li>
+            <% } %>
+          </ul>
+        </nav>
+      </div>
+</header>

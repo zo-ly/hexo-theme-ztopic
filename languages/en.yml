@@ -1,0 +1,13 @@
+menu:
+  home: home
+  archive: archive
+  tags: tags
+  about: about
+
+pagination:
+  prev: prev
+  next: next
+
+posts:
+  readmore: Read more
+  toc: Contents

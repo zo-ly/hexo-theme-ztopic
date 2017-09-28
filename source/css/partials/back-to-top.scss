@@ -1,0 +1,23 @@
+.back-to-top {
+  text-align: center;
+  display: none;
+  position: fixed;
+  right: 80px;
+  bottom: 40px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 10px rgba(0,0,0,.2);
+  transition: all .3s ease-out;
+  z-index: 10;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-5px);
+  }
+  i{
+    display: inline-block;
+    margin-top: -6px;
+    font-size: 35px;
+  }
+}

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Chancery';
+  src: url('../fonts/chancery/apple-chancery-webfont.eot');
+  src: local('Apple Chancery'), url('../fonts/chancery/apple-chancery-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/chancery/apple-chancery-webfont.woff2') format('woff2'),
+  url('../fonts/chancery/apple-chancery-webfont.woff') format('woff'),
+  url('../fonts/chancery/apple-chancery-webfont.ttf') format('truetype'),
+  url('../fonts/chancery/apple-chancery-webfont.svg#apple-chancery') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Font family of the site.
+$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+
+// Serif font family of the site.
+$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+
+//art font family
+$art-font: 'Chancery', cursive, LiSu, sans-serif !default;
+
+//logo font family
+$logo-font: 'Lobster', cursive;
+
+//heading font size
+$global-headings: (
+  h1: 26px,
+  h2: 24px,
+  h3: 20px,
+  h4: 16px,
+  h5: 14px,
+  h6: 14px
+) !default;
+@each $header, $size in $global-headings {
+  #{$header} {
+    font-size: $size;
+    font-family: $global-serif-font-family;
+  }
+}
+
+$footer-height: 170px;
+
+//============site color=========//
+//banner color
+$main-color: #34495e; //#00bcd5
+//header and footer font color
+$theme-font-color: #fff;
+//header background color
+$nav-color: rgba(52,73,94,.9); //rgba(0,188,213,.9)
+//theme's main red color
+$main-red: #f6695f;
+//post font color
+$main-font-color: #34495e;
+// footer copyright-color
+$copyright-color: #aaa;
+// content width
+$main-width: 960px;

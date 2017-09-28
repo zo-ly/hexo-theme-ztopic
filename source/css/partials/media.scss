@@ -1,0 +1,137 @@
+/*=====responsive======*/
+@media only screen and (min-width: 800px){
+  header.site-nav{
+    display: block;
+  }
+  .post .mobile-post-title{
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px){
+  .post-toc{
+    display: none;
+  }
+  .mobile-header{
+    display: block;
+  }
+  header.site-nav{
+    display: none;
+  }
+  .banner .show{
+    display: none;
+  }
+  main{
+    margin: 60px 16px 10px;
+  }
+  .post .mobile-post-tilte{
+    display: block;
+  }
+  .back-to-top{
+    right: 20px;
+    bottom: 20px;
+  }
+  article#post-excerpt{
+    header {
+      h1{
+        font-size: 22px;
+        margin: 0;
+      }
+      .post-meta{
+        margin-bottom: 0;
+      }
+    }
+    .post-tags a{
+        padding: 0;
+    }
+  }
+  article.post{
+    padding: 10px;
+    margin: 0 auto 10px;
+    .post-meta{
+      font-size: 14px;
+      margin-bottom: 0;
+      font-weight: normal;
+      color: #8a8a8a;
+      i{
+        font-weight: normal;
+      }
+    }
+    #read-more{
+      margin: 5px 0;
+      a{
+        font-size: 14px;
+        padding: 3px;
+      }
+    }
+    h1{
+      font-size: 20px;
+    }
+    h2{
+      font-size: 18px;
+    }
+    h3{
+      font-size: 16px;
+    }
+    h4{
+      font-size: 14px;
+    }
+    h5{
+      font-size: 12px;
+    }
+    h6{
+      font-size: 12px;
+    }
+  }
+  .archives-container{
+    padding: 10px 20px;
+    .archive-year{
+      font-size: 24px;
+      padding: 0 5px;
+      border-left: 2px solid $main-red;
+    }
+    .archive-article{
+      padding: 5px;
+      .archive-title{
+        font-size: 16px;
+        padding-left: 10px;
+      }
+      .archive-meta{
+        font-size: 12px;
+      }
+    }
+  }
+  .pagination.post-nav{
+    height: 80px;
+    margin: 0 16px;
+    a{
+      text-decoration: none;
+    }
+    .next-post{
+      float: none;
+      display: block;
+    }
+    .prev-post{
+      float: none;
+      display: block;
+    }
+  }
+  footer{
+    .social-links a i{
+      margin: 0 10px;
+    }
+    .quote{
+      font-size: 14px;
+      p:before{
+        font-size: 35px;
+        margin-top: -35px;
+      }
+    }
+    .copyright{
+      font-size: 12px;
+      margin-top: 10px;
+      p{
+        margin: 0;
+      }
+    }
+  }
+}

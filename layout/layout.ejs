@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- partial('partials/head') %>
+<body>
+  <div class="mobile-header">
+    <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
+    <div class="mobile-logo">
+      <a href="<%= url_for('.') %>"><%= theme.logo %></a>
+    </div>
+  </div>
+  <div class="page" id="mobile-nav-panel">
+      <%- partial('partials/header') %>
+      <%- partial('partials/banner') %>
+      <main class="main"id="main">
+          <%- body %>
+          <%- partial('partials/pagination') %>
+          <%- partial('partials/comments') %>
+      </main>
+    <%- partial('partials/footer') %>
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <%- partial('partials/slideout') %>
+
+  <%- js('libs/jQuery/jquery-3.2.1.min.js') %>
+  <%- js('libs/slideout/slideout.min.js') %>
+  <%- js('js/ztopic.js') %>
+</body>
+</html>
