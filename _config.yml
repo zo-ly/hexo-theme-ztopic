@@ -11,16 +11,16 @@ menu:
 
 # site logo introduce and footer quote
 # ====================================
-logo:
-introduce:
-quote:
+logo: Zcc's blog
+introduce: "practice makes perfect"
+quote: "草在结它的种子，风在摇它的叶子。我们站着，不说话，就十分美好。——顾城《门前》"
 
 # social club
 # ====================================
 social:
-  zhihu:
-  weibo:
-  github:
+  zhihu: https://www.zhihu.com/people/zao-gao-tou-ding
+  weibo: http://weibo.com/u/5629747157
+  github: https://github.com/wa-ri
   steam:
   linkedin:
   facebook:
@@ -35,12 +35,12 @@ social:
 
 #leanCloud
 leancloud:
-  app_id:
-  app_key:
+  app_id: 7ieEM5Wg1VoXasvlhdlNIjck-gzGzoHsz
+  app_key: VKmKayyxXqATSX4v3fBATw7U
 
 
 #disqus
-disqus_shortname:
+disqus_shortname: wa-ri-github-io
 
 #changyan
 changyan:
@@ -48,5 +48,5 @@ changyan:
   appkey:
 
 # ==================================
-
+version: 1.0
 # ==================================
