@@ -8,5 +8,5 @@ a simple theme for Hexo http://zccblog.cn/
 #### 安装
 ```npm
 $ npm install --save hexo-renderer-sass
-$ git clone https://github.com/wa-ri/hexo-theme-topic themes/ztopic
+$ git clone https://github.com/wa-ri/hexo-theme-ztopic themes/ztopic
 ```
