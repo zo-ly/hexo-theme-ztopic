@@ -1,14 +1,20 @@
 <footer>
       <div class="social-links">
         <% for(name in theme.social){ %>
-          <a href="<%- url_for(theme.social[name])%>"><i class="iconfont icon-<%= name %>"></i></a>
+          <% if(theme.social[name]){ %>
+            <a href="<%- url_for(theme.social[name])%>"><i class="iconfont icon-<%= name %>"></i></a>
+          <% } %>
         <% } %>
       </div>
       <div class="quote">
         <p><%= theme.quote %></p>
       </div>
       <div class="copyright">
-        <p>由<a href="https://hexo.io/">Hexo</a>强力驱动|主题- <a href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a></p>
+        <p>
+          <%- __('footer.powered','<a href="https://hexo.io/">Hexo</a>') %>
+          <span>|</span>
+          <%- __('footer.theme') %> - <a href="https://github.com/wa-ri/hexo-theme-ztopic">ztopic</a
+        </p>
         <p>
           <span>
           <% var current = date(Date.now(),'YYYY') %>

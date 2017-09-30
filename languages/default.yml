@@ -11,3 +11,14 @@ pagination:
 posts:
   readmore: 阅读更多
   toc: 目录
+  visits: 阅读次数
+
+footer:
+  powered: "由 %s 强力驱动"
+  theme: 主题
+
+counter:
+  tagcloud:
+    zero: "暂无标签"
+    one: 共计1个标签
+    other: "共计 %d 个标签"

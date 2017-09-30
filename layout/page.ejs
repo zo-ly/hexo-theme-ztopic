@@ -1,10 +1,30 @@
-
   <%if(page.type && page.type==="about"){%>
       <div id="about">
         <article class="post">
+          <header>
+            <div class="post-title mobile-post-title">
+              <h1><%= page.title %></h1>
+            </div>
+          </header>
           <div class="post-content">
             <%- page.content %>
           </div>
         </article>
       </div>
+  <%}%>
+  <%if(page.type && page.type ==="tags"){%>
+    <div id="tags">
+      <div class="tags-container">
+        <div class="tags-title">
+          <%- _p('counter.tagcloud', site.tags.length)  %>
+        </div>
+        <div class="tags-content">
+          <%- tagcloud({
+            amount: 100,
+            min_font: 16,
+            max_font: 28,
+          }) %>
+        </div>
+      </div>
+    </div>
   <%}%>

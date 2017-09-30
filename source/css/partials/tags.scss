@@ -1,0 +1,22 @@
+.tags-container{
+  min-height: 400px;
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,.15);
+  .tags-title{
+    text-align: center;
+    border-left: 2px solid $main-red;
+  }
+  .tags-content{
+    margin: 40px 0 0;
+    text-align: center;
+    a{
+      text-decoration: none;
+      margin: 5px;
+      transition: color .3s;
+      &:hover{
+        color: $main-red;
+      }
+    }
+  }
+}

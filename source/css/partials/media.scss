@@ -28,7 +28,7 @@
   }
   .back-to-top{
     right: 20px;
-    bottom: 20px;
+    bottom: 50px;
   }
   article#post-excerpt{
     header {
@@ -46,14 +46,16 @@
   }
   article.post{
     padding: 10px;
-    margin: 0 auto 10px;
+    margin: 0 auto 20px;
     .post-meta{
-      font-size: 14px;
-      margin-bottom: 0;
-      font-weight: normal;
-      color: #8a8a8a;
-      i{
+      .post-time{
+        font-size: 14px;
+        margin-bottom: 0;
         font-weight: normal;
+        color: #8a8a8a;
+        i{
+          font-weight: normal;
+        }  
       }
     }
     #read-more{
@@ -63,30 +65,25 @@
         padding: 3px;
       }
     }
-    h1{
-      font-size: 20px;
-    }
-    h2{
-      font-size: 18px;
-    }
-    h3{
-      font-size: 16px;
-    }
-    h4{
-      font-size: 14px;
-    }
-    h5{
-      font-size: 12px;
-    }
-    h6{
-      font-size: 12px;
+    $mobile-headings: (
+      h1: 20px,
+      h2: 18px,
+      h3: 16px,
+      h4: 14px,
+      h5: 12px,
+      h6: 12px
+    ) !default;
+    @each $mobile-header, $mobile-size in $mobile-headings{
+      #{$mobile-header}{
+        font-size: $mobile-size;
+      }
     }
   }
   .archives-container{
     padding: 10px 20px;
     .archive-year{
       font-size: 24px;
-      padding: 0 5px;
+      padding: 0 10px;
       border-left: 2px solid $main-red;
     }
     .archive-article{
@@ -109,10 +106,12 @@
     .next-post{
       float: none;
       display: block;
+      color: #0099cc;
     }
     .prev-post{
       float: none;
       display: block;
+      color: #0099cc;
     }
   }
   footer{

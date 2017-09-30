@@ -1,4 +1,3 @@
-
   <article class="post">
     <header>
       <div class="post-title mobile-post-title">
@@ -15,9 +14,19 @@
       </div>
       <div class="post-meta">
         <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(page.date,"YYYY-MM-DD")%></span>
+        <!----------------------------------->
+          <% if (theme.leancloud.app_id && theme.leancloud.app_key){ %>
+            <i class="iconfont icon-divide"></i>
+            <div class="post-visits"
+                 data-url="<%- url_for(page.path) %>"
+                 data-title="<%- page.title %>">
+                <%- __('posts.visits') %>
+              </div>
+          <% } %>
+        <!----------------------------------->
       </div>
     </header>
-    <%- partial('partials/post/toc') %>
+    <%- partial('partials/toc') %>
     <div class="post-content">
       <%- page.content %>
     </div>

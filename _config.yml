@@ -1,36 +1,52 @@
-
-# html lang
-language: zh-CN
+# Miscelaneous
+favicon: /favicon.ico
 
 # main menu navigation
+# ====================================
 menu:
   home: /
   archive: /archives
   #tags: /tags
   about: /about
-#logo
-logo: Zcc's blog
-#introduce
-introduce: "practice makes perfect practice makes"
-#quote
-quote: "草在结它的种子，风在摇它的叶子。我们站着，不说话，就十分美好。——顾城《门前》"
-# social club
-social:
-  zhihu: https://www.zhihu.com/people/zao-gao-tou-ding
-  weibo: http://weibo.com/u/5629747157
-  github: https://github.com/wa-ri
-# Miscelaneous
-favicon: /favicon.ico
-#pagination
-pagination:
-  prev: prev
-  next: next
-#disqus
-disqus_shortname: wa-ri-github-io
-# stylesheets loaded in the <head>
-stylesheets:
-- /css/ztopic.css
 
-# scripts loaded in the end of the body
-scripts:
-- /js/ztopic.js
+# site logo introduce and footer quote
+# ====================================
+logo:
+introduce:
+quote:
+
+# social club
+# ====================================
+social:
+  zhihu:
+  weibo:
+  github:
+  steam:
+  linkedin:
+  facebook:
+  twitter:
+  douban:
+  tumblr:
+  instagram:
+  stackoverflow:
+
+# third party services settings
+# ===================================
+
+#leanCloud
+leancloud:
+  app_id:
+  app_key:
+
+
+#disqus
+disqus_shortname:
+
+#changyan
+changyan:
+  appid:
+  appkey:
+
+# ==================================
+
+# ==================================

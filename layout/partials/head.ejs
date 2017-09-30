@@ -2,6 +2,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <%- css('css/style.css') %>
+  <meta name="theme-color" content="#34495e">
   <title><%= config.title %></title>
+  <%- css('css/style.css') %>
+  <%- partial('../thirdParty/google_sitemap') %>
+  <%- partial('../thirdParty/baidu_sitemap') %>
+  <%- partial('../thirdParty/google_analys') %>
+  <%- partial('../thirdParty/baidu_analys') %>
+  <%- partial('../widget/leancloud') %>
 </head>

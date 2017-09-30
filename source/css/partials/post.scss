@@ -25,10 +25,16 @@ article#post-excerpt{
       }
     }
     .post-meta{
-      color: #8a8a8a;
-      font-size: 16px;
-      margin-bottom: 30px;
-      font-weight: normal;
+      .post-time{
+        color: #8a8a8a;
+        font-size: 16px;
+        margin-bottom: 30px;
+        font-weight: normal;
+      }
+      .post-visits{
+        color: #8a8a8a;
+        font-size: 14px;
+      }
     }
   }
   .post-tags a{
@@ -69,24 +75,28 @@ article.post{
         }
       }
       .post-meta{
-        font-size: 20px;
-        margin-bottom: 30px;
-        font-weight: bold;
-        i{
-          font-weight: normal;
+        .post-time{
+          font-size: 20px;
+          margin-bottom: 30px;
+          font-weight: bold;
+          i{
+            font-weight: normal;
+          }
+        }
+        .post-visits{
+          display: inline-block;
+          color: #8a8a8a;
+          font-size: 14px;
         }
       }
-      img[alt="cover-img"]{
+      img{
+        box-sizing: border-box;
+        max-width: 100%;
         display: block;
-        width: 112%;
-        margin: 0 -6%;
         border: 1px solid #fff;
         box-shadow: 0 1px 3px rgba(0,0,0,.15);
         background: #fff;
         padding: 5px;
-      }
-      img{
-        max-width: 100%;
       }
       .post-tags{
         margin-bottom: 10px;

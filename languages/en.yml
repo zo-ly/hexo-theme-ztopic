@@ -1,13 +1,24 @@
 menu:
-  home: home
-  archive: archive
-  tags: tags
-  about: about
+  home: Home
+  archive: Archive
+  tags: Tags
+  about: About
 
 pagination:
-  prev: prev
-  next: next
+  prev: Prev
+  next: Next
 
 posts:
   readmore: Read more
   toc: Contents
+  visits: Reading times
+
+footer:
+  powered: "Powered by %s"
+  theme: Theme
+
+counter:
+  tagcloud:
+    zero: "No Tags"
+    one: 1 Tag In Total
+    other: "%d Tags In Total"

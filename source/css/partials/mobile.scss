@@ -1,3 +1,6 @@
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 #mobile-nav{
   .slideout-menu{
     position: fixed;
@@ -10,13 +13,15 @@
     background: #f6f6f6;
     width: 180;
     display: none;
-    padding-top: 60px;
+    padding-top: 100px;
     a{
-      font-size: 16px;
+      text-align: center;
+      width: 180px;
+      font-size: 18px;
       display: block;
       text-decoration: none;
-      padding-left: 20px;
-      margin: 20px;
+      margin: 20px 0;
+      padding: 5px 0;
     }
     .mobile-intro{
       text-align: center;
@@ -62,11 +67,14 @@
     color: $theme-font-color;
   }
   span{
-    font-size: 30px;
     float: left;
-    margin-left: 10px;
-    margin-top: -10px;
+    margin-left: 12px;
+    margin-top: 6px;
     cursor: pointer;
+    padding: 0 10px;
+    i{
+      font-size: 22px;
+    }
   }
   .mobile-logo{
     text-align: center;
@@ -74,6 +82,7 @@
       font-size: 30px;
       text-decoration: none;
       font-family: $logo-font;
+      margin-right: 42px;
     }
   }
 }
