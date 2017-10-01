@@ -6,9 +6,11 @@
           <% } %>
         <% } %>
       </div>
-      <div class="quote">
-        <p><%= theme.quote %></p>
-      </div>
+      <% if(theme.quote && theme.quote.length){ %>
+        <div class="quote">
+          <p><%= theme.quote %></p>
+        </div>
+      <% } %>
       <div class="copyright">
         <p>
           <%- __('footer.powered','<a href="https://hexo.io/">Hexo</a>') %>
