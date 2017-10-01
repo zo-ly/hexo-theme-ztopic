@@ -5,6 +5,7 @@
     myFunc.toc();
     myFunc.mobileNavbar();
     myFunc.visits();
+    myFunc.fancybox();
   });
 
   'use strict';
@@ -201,6 +202,25 @@
       } else {
         showTime(Counter);
       }
+    }
+  }
+
+  myFunc.fancybox = function () {
+    if ($.fancybox){
+      $('.post').each(function () {
+        $(this).find('img').each(function () {
+          $(this).wrap('<a class="fancybox" href="' + this.src + '" title="' + this.alt + '"></a>');
+        });
+      });
+
+      $('.fancybox').fancybox({
+        openEffect: 'elastic',
+        closeEffect: 'elastic',
+		    closeBtn		: false,
+		    helpers : {
+			  title	: { type : 'outside' },
+		    }
+      });
     }
   }
 

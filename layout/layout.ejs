@@ -25,6 +25,10 @@
 
   <%- js('libs/jQuery/jquery-3.2.1.min.js') %>
   <%- js('libs/slideout/slideout.min.js') %>
+  <% if (theme.fancybox){ %>
+    <%- css('libs/fancybox/jquery.fancybox.css') %>
+    <%- js('libs/fancybox/jquery.fancybox.pack.js') %>
+  <% } %>
   <%- js('js/ztopic.js') %>
 </body>
 </html>
