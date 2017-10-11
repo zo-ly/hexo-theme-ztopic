@@ -1,3 +1,22 @@
+//============site color=========//
+//banner color
+$main-color: #34495e !default; //#00bcd5
+//header and footer font color
+$theme-font-color: #fff !default;
+//header background color
+$nav-color: rgba(52,73,94,.9) !default; //rgba(0,188,213,.9)
+//theme's main red color
+$main-red: #f6695f !default;
+//post font color
+$main-font-color: #34495e !default;
+// footer copyright-color
+$copyright-color: #aaa !default;
+// content width
+$main-width: 960px !default;
+//footer height
+$footer-height: 170px !default;
+
+//font-family
 @font-face {
   font-family: 'Chancery';
   src: url('../fonts/chancery/apple-chancery-webfont.eot');
@@ -15,11 +34,6 @@
   font-weight: normal;
   font-style: normal;
 }
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
 // Font family of the site.
 $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
@@ -30,7 +44,7 @@ $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 $art-font: 'Chancery', cursive, LiSu, sans-serif !default;
 
 //logo font family
-$logo-font: 'Lobster', cursive;
+$logo-font: 'Lobster', cursive !default;
 
 //heading font size
 $global-headings: (
@@ -47,22 +61,3 @@ $global-headings: (
     font-family: $global-serif-font-family;
   }
 }
-
-//footer height
-$footer-height: 170px;
-
-//============site color=========//
-//banner color
-$main-color: #34495e; //#00bcd5
-//header and footer font color
-$theme-font-color: #fff;
-//header background color
-$nav-color: rgba(52,73,94,.9); //rgba(0,188,213,.9)
-//theme's main red color
-$main-red: #f6695f;
-//post font color
-$main-font-color: #34495e;
-// footer copyright-color
-$copyright-color: #aaa;
-// content width
-$main-width: 960px;
