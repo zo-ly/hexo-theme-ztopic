@@ -1,0 +1,5 @@
+<% if(!is_home() && !is_archive()){ %>
+  <% if(page.comments && theme.disqus_shortname && theme.disqus_shortname.length > 0){ %>
+  <%- partial('_thirdParty/disqus') %>
+  <% } %>
+<% } %>

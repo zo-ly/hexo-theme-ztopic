@@ -1,0 +1,29 @@
+<div class="banner">
+  <div class="show">
+    <!-- <img src="<%- url_for(theme.banner) %>" alt="banner"> -->
+    <div class="banner-title">
+      <%if(is_post()){%>
+        <div class="post-title">
+          <%= page.title %>
+            <div class="post-tags">
+    		    <% if (page.tags && page.tags.length){ %>
+              <%- list_tags(page.tags, {
+                show_count: false,
+                style: 'none',
+                separator: ' '
+              }) %>
+            <% } %>
+    	      </div>
+        </div>
+      <%}else if(page.type && page.type === 'about'){%>
+        <div class="about-title">
+          <%= "about me" %>
+        </div>
+      <%}else{%>
+        <div class="intro">
+          <%= theme.introduce %>
+        </div>
+      <%}%>
+    </div>
+  </div>
+</div>

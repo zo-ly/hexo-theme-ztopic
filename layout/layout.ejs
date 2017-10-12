@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- partial('partials/head') %>
+<%- partial('_partials/head') %>
 <body>
   <div class="mobile-header">
     <span><i class="iconfont icon-turnon" id="mobile-nav-toggle"></i></span>
@@ -9,19 +9,19 @@
     </div>
   </div>
   <div class="page" id="mobile-nav-panel">
-      <%- partial('partials/header') %>
-      <%- partial('partials/banner') %>
+      <%- partial('_partials/header') %>
+      <%- partial('_partials/banner') %>
       <main class="main"id="main">
           <%- body %>
-          <%- partial('partials/pagination') %>
-          <%- partial('partials/comments') %>
+          <%- partial('_partials/pagination') %>
+          <%- partial('_partials/comments') %>
       </main>
-    <%- partial('partials/footer') %>
+    <%- partial('_partials/footer') %>
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont icon-up"></i>
     </div>
   </div>
-  <%- partial('partials/slideout') %>
+  <%- partial('_partials/slideout') %>
 
   <%- js('libs/jQuery/jquery-3.2.1.min.js') %>
   <%- js('libs/slideout/slideout.min.js') %>
