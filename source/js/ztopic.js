@@ -89,11 +89,30 @@
     });
   };
 
+  myFunc.throttle = function (func, wait, mustRun) {
+    var timeout
+    var startTime = new Date()
+
+    return function () {
+      var context = this
+      var args = arguments
+      var curTime = new Date()
+
+      clearTimeout(timeout)
+      if (curTime - startTime >= mustRun) {
+        func.apply(context, args)
+        startTime = curTime
+      } else {
+        timeout = setTimeout(func, wait)
+      }
+    }
+  };
+
   myFunc.navAnimation = function (){
     var beforeScroll = 0,afterScroll = 0;
     var $nav = $('.site-nav');
     var $mobileNav = $('.mobile-header');
-    $(window).scroll(function(){
+    $(window).scroll(myFunc.throttle(function(){
       if($(window).width() > 900){
         afterScroll = $(this).scrollTop();
         if(afterScroll > beforeScroll){
@@ -103,7 +122,7 @@
         }
         beforeScroll = afterScroll;
       }
-    });
+    }, 50, 500));
   };
 
   myFunc.mobileNavbar = function(){
