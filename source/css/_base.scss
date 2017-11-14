@@ -11,7 +11,7 @@ body{
   background: #eaeaea;
   color: $main-font-color;
   white-space: normal;
-  word-break: break-all;
+  word-wrap: break-word;
   a{
     color: $main-font-color;
   }
