@@ -22,9 +22,8 @@
     border-color: #fff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     &:hover{
-      border-color: $main-color;
-      background: $main-color;
-      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
     }
   }
 }
