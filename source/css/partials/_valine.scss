@@ -1,0 +1,30 @@
+#valine_comments{
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  .vwrap{
+    border: 1px solid #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  }
+  input{
+    font-size: 14px;
+    border-bottom-width: 2px;
+    text-align: center;
+  }
+  textarea{
+    font-size: 16px;
+  }
+  button.vsubmit.vbtn{
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    &:hover{
+      border-color: $main-color;
+      background: $main-color;
+      color: #fff;
+    }
+  }
+}

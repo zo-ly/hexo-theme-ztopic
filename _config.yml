@@ -32,7 +32,7 @@ social:
   tumblr:
   instagram:
   stackoverflow:
-  rss: 
+  rss:
 
 # third party services settings
 # ===================================
@@ -42,6 +42,18 @@ leancloud:
   app_id:
   app_key:
 
+# comments
+# Valine comment system. https://valine.js.org
+valine:
+  enable: true # if you want use valine, please set this value to true
+  app_id:  # your leancloud appId
+  app_key:  # your leancloud appKey
+  notify: false # Mail notify
+  verify: false # Verify code
+  avatar: retro # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  placeholder: 欢迎留言~ O(∩_∩)O # Comment Box placeholder
+  guest_info: nick,mail,link # Comment header info
+  pageSize: 10 # comment list page size
 
 #disqus
 disqus_shortname:

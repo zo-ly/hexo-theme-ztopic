@@ -1,5 +1,7 @@
 <% if(!is_home() && !is_archive()){ %>
   <% if(page.comments && theme.disqus_shortname && theme.disqus_shortname.length > 0){ %>
   <%- partial('_thirdParty/disqus') %>
+  <% } else if(page.comments && theme.valine.app_id && theme.valine.app_key){ %>
+    <%- partial('_thirdParty/valine') %>
   <% } %>
 <% } %>
