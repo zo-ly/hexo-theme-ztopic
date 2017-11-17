@@ -5,6 +5,7 @@
   margin: 20px 0;
   border-radius: 20px;
   .vwrap{
+    padding: 0 10px 10px;
     border: 1px solid #fff;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
@@ -17,8 +18,19 @@
       border-color: $main-red;
     }
   }
+  .veditor{
+    height: 8rem;
+  }
   textarea{
     font-size: 16px;
+    font-family: $global-serif-font-family;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid transparent;
+    &:focus{
+      background: #edf4f8;
+      border-color: #c4c8cb;
+    }
   }
   button.vsubmit.vbtn{
     background: #fff;

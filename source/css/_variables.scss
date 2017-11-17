@@ -18,19 +18,14 @@ $footer-height: 170px !default;
 
 //font-family
 @font-face {
-  font-family: 'Chancery';
-  src: url('../fonts/chancery/apple-chancery-webfont.eot');
-  src: local('Apple Chancery'), url('../fonts/chancery/apple-chancery-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/chancery/apple-chancery-webfont.woff2') format('woff2'),
-  url('../fonts/chancery/apple-chancery-webfont.woff') format('woff'),
-  url('../fonts/chancery/apple-chancery-webfont.ttf') format('truetype'),
-  url('../fonts/chancery/apple-chancery-webfont.svg#apple-chancery') format('svg');
-  font-weight: lighter;
+  font-family: 'Playball';
+  src: url('../fonts/Playball/Playball-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Lobster';
-  src: url('../fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+  font-family: 'Merienda';
+  src: url('../fonts/Merienda/Merienda-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,10 +36,10 @@ $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !def
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 //art font family
-$art-font: 'Chancery', cursive, LiSu, sans-serif !default;
+$art-font: 'Playball', cursive, LiSu, sans-serif !default;
 
 //logo font family
-$logo-font: 'Lobster', cursive !default;
+$logo-font: 'Merienda', cursive !default;
 
 //heading font size
 $global-headings: (
