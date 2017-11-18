@@ -35,11 +35,13 @@
     }
   }
   button.vsubmit.vbtn{
+    font-weight: bold;
     border-radius: 3px;
-    background: #0099cc;
+    background: #33b1ff;
     color: #fff;
-    border-color: #0099cc;
+    border-color: #33b1ff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .1s;
     &:hover{
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
     }
