@@ -24,8 +24,8 @@ $footer-height: 170px !default;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Merienda';
-  src: url('../fonts/Merienda/Merienda-Bold.ttf') format('truetype');
+  font-family: 'Satisfy';
+  src: url('../fonts/Satisfy/Satisfy-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -36,10 +36,10 @@ $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !def
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 //art font family
-$art-font: 'Playball', cursive, LiSu, sans-serif !default;
+$art-font: 'Satisfy', cursive, LiSu, sans-serif !default;
 
 //logo font family
-$logo-font: 'Merienda', cursive !default;
+$logo-font: 'Playball', cursive !default;
 
 //heading font size
 $global-headings: (

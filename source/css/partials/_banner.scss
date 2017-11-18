@@ -3,7 +3,7 @@
   .show{
     position: relative;
     z-index: 2;
-    font-size: 60px;
+    font-size: 65px;
     height: 500px;
     background: $main-color;
     color: $theme-font-color;
@@ -11,7 +11,7 @@
     div.banner-title{
       position: absolute;
       left: 18%;
-      top: 30%;
+      top: 36%;
       margin: 0;
       font-family: $art-font;
       .post-title{

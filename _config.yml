@@ -45,7 +45,7 @@ leancloud:
 # comments
 # Valine comment system. https://valine.js.org
 valine:
-  comment_name: 留言板 #your comment title
+  comment_name: 留言板 #your comment area title
   enable: true # if you want use valine, please set this value to true
   app_id:  # your leancloud appId
   app_key:  # your leancloud appKey
