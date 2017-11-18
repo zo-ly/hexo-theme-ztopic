@@ -35,12 +35,12 @@
     }
   }
   button.vsubmit.vbtn{
-    background: #fff;
-    color: #000;
-    border-color: #fff;
+    border-radius: 3px;
+    background: #0099cc;
+    color: #fff;
+    border-color: #0099cc;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
     &:hover{
-      border-color: #fff;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
     }
   }
