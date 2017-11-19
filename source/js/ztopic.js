@@ -89,23 +89,23 @@
   };
 
   myFunc.throttle = function (func, wait, mustRun) {
-    var timeout
-    var startTime = new Date()
+       var timeout
+       var startTime = new Date()
 
-    return function () {
-      var context = this
-      var args = arguments
-      var curTime = new Date()
+       return function () {
+         var context = this
+         var args = arguments
+         var curTime = new Date()
 
-      clearTimeout(timeout)
-      if (curTime - startTime >= mustRun) {
-        func.apply(context, args)
-        startTime = curTime
-      } else {
-        timeout = setTimeout(func, wait)
-      }
-    }
-  };
+         clearTimeout(timeout)
+         if (curTime - startTime >= mustRun) {
+           func.apply(context, args)
+           startTime = curTime
+         } else {
+           timeout = setTimeout(func, wait)
+         }
+       }
+     };
 
   myFunc.navAnimation = function (){
     var beforeScroll = 0,afterScroll = 0;
@@ -128,8 +128,8 @@
     var mbToggle = $("#mobile-nav-toggle");
     var mbNav = $(".mobile-header");
     var slideout = new Slideout({
-      'panel': document.getElementById('mobile-nav-panel'),
-      'menu': document.getElementById('mobile-nav-menu'),
+      'panel': document.getElementById("mobile-nav-panel"),
+      'menu': document.getElementById("mobile-nav-menu"),
       'padding': 180,
       'tolerance': 70
     });
@@ -140,10 +140,10 @@
     });
 
     slideout.on('beforeopen',function(){
-      document.getElementById("mobile-nav-toggle").setAttribute("class","iconfont icon-turnoff");
+      $("#mobile-nav-toggle").attr("class","iconfont icon-turnoff");
     });
     slideout.on('beforeclose',function(){
-      document.getElementById("mobile-nav-toggle").setAttribute("class","iconfont icon-turnon");
+      $("#mobile-nav-toggle").attr("class","iconfont icon-turnon");
     })
 
     $('#mobile-nav-panel').on('touchend', function () {
