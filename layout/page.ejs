@@ -28,3 +28,8 @@
       </div>
     </div>
   <%}%>
+  <%if(page.type && page.type==='error'){%>
+  <div class="archives-container">
+    <%- page.content%>
+  </div>
+  <%}%>
