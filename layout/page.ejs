@@ -1,35 +1,47 @@
-  <%if(page.type && page.type==="about"){%>
-      <div id="about">
-        <article class="post">
-          <header>
-            <div class="post-title mobile-post-title">
-              <h1><%= page.title %></h1>
-            </div>
-          </header>
-          <div class="post-content">
-            <%- page.content %>
+<%if(page.type && page.type==="about"){%>
+    <div id="about">
+      <article class="post">
+        <header>
+          <div class="post-title mobile-post-title">
+            <h1><%= page.title %></h1>
           </div>
-        </article>
+        </header>
+        <div class="post-content">
+          <%- page.content %>
+        </div>
+      </article>
+    </div>
+<%}%>
+<%if(page.type && page.type ==="tags"){%>
+  <div id="tags">
+    <div class="tags-container">
+      <div class="tags-title">
+        <%- _p('counter.tagcloud', site.tags.length)  %>
       </div>
-  <%}%>
-  <%if(page.type && page.type ==="tags"){%>
-    <div id="tags">
-      <div class="tags-container">
-        <div class="tags-title">
-          <%- _p('counter.tagcloud', site.tags.length)  %>
-        </div>
-        <div class="tags-content">
-          <%- tagcloud({
-            amount: 100,
-            min_font: 16,
-            max_font: 28,
-          }) %>
-        </div>
+      <div class="tags-content">
+        <%- tagcloud({
+          amount: 100,
+          min_font: 16,
+          max_font: 28,
+        }) %>
       </div>
     </div>
-  <%}%>
-  <%if(page.type && page.type==='error'){%>
-  <div class="archives-container">
-    <%- page.content%>
   </div>
-  <%}%>
+<%}%>
+<%if(page.type && page.type==="error"){%>
+<div class="archives-container">
+  <%- page.content%>
+</div>
+<%}%>
+<%if(page.type && page.type==="categories"){%>
+  <div class="archives-container category-container">
+    <div class="category-meta">
+      <%- _p('counter.category', site.categories.length) %>
+    </div>
+    <ul>
+    <%site.categories.each(function(sorting){%>
+      <li><a class="category-item" href="<%= url_for(sorting.path) %>"><i class="iconfont icon-folder"></i><%= sorting.name %></a></li>
+    <%})%>
+    </ul>
+  </div>
+<%}%>

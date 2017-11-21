@@ -1,20 +1,23 @@
 
-<div id="category">
-  <h1><%=page.category%></h1>
+<div class="archives-container category-container">
+  <h3 class="category-item-name"><i class="iconfont icon-folder"></i><%=page.category%></h3>
   <% page.posts.each(function(article) { %>
     <div class="category-item">
       <% if (article.link) { %>
         <a href="<%=url_for(article.link)%>" target="_blank">
-          <%=article.title || 'No Title'%>
+          <time datetime="<%=date_xml(article.date)%>">
+            <%=date(article.date)%>
+          </time>
+          <span class="category-title"><%=article.title || 'No Title'%></span>
         </a>
       <% } else { %>
         <a href="<%=url_for(article.path)%>">
-          <%=article.title || 'No Title'%>
+          <time datetime="<%=date_xml(article.date)%>">
+            <%=date(article.date)%>
+          </time>
+          <span class="category-title"><%=article.title || 'No Title'%></span>
         </a>
       <% } %>
-      <time datetime="<%=date_xml(article.date)%>">
-        <%=date(article.date)%>
-      </time>
     </div>
   <% }); %>
 </div>

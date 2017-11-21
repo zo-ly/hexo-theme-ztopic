@@ -77,6 +77,19 @@ article.post{
           color: $main-red;
         }
       }
+      blockquote{
+        font: 14px/22px helvetica, sans-serif;
+        font-style: italic;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-left: 3px solid #ccc;
+        background-color:#f1f1f1;
+      }
       .post-meta{
         .post-time{
           font-size: 20px;
@@ -116,6 +129,28 @@ article.post{
             content: "#";
             font-size: 16px;
           }
+        }
+      }
+      .post-footer{
+        margin-top: 40px;
+        text-align: center;
+        font-family: $art-font;
+        color: #8d8a8a;
+        &:after{
+          content: "";
+          display: inline-block;
+          margin-left: 15px;
+          width: 30%;
+          border: 1px solid transparent;
+          border-top-color: #8d8c8c;
+        }
+        &:before{
+          content: "";
+          display: inline-block;
+          margin-right: 15px;
+          width: 30%;
+          border: 1px solid transparent;
+          border-top-color: #8d8c8c;
         }
       }
       #read-more{

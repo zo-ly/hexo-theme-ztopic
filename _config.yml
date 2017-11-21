@@ -9,6 +9,7 @@ fancybox: true
 menu:
   home: /
   archive: /archives
+  #category: /categories
   #tags: /tags
   about: /about
 
