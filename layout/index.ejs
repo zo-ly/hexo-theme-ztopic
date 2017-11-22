@@ -9,7 +9,6 @@
             <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(post.date,"YYYY-MM-DD")%></span>
             <% if (post.categories && post.categories.length){ %>
                 <% post.categories.each(function(sorting){ %>
-                  <%console.log(sorting)%>
                   <i class="iconfont icon-divide"></i>
                   <i class="iconfont icon-folder"></i>
                   <a class="post-category" href="<%= url_for(sorting.path) %>"><%= sorting.name %></a>
