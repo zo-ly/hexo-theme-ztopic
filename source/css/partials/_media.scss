@@ -7,11 +7,13 @@
     display: none;
   }
 }
+
 @media only screen and (max-width: 1440px){
   .post-toc{
     display: none;
   }
 }
+
 @media only screen and (max-width: 800px){
   .mobile-header{
     display: block;
@@ -57,7 +59,7 @@
         color: #8a8a8a;
         i{
           font-weight: normal;
-        }  
+        }
       }
     }
     #read-more{
@@ -71,9 +73,9 @@
       h1: 20px,
       h2: 18px,
       h3: 16px,
-      h4: 14px,
-      h5: 12px,
-      h6: 12px
+      h4: 15px,
+      h5: 15px,
+      h6: 14px
     ) !default;
     @each $mobile-header, $mobile-size in $mobile-headings{
       #{$mobile-header}{
@@ -99,6 +101,18 @@
       }
     }
   }
+  .category-container ul li {
+   font-size: 18px;
+   }
+   .category-container .category-item a .category-title{
+     font-size: 16px;
+   }
+   .category-container .category-item a time{
+     font-size: 12px;
+   }
+   .category-container{
+     padding: 10px 20px;
+   }
   .pagination.post-nav{
     height: 80px;
     margin: 0 16px;
