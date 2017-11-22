@@ -19,6 +19,9 @@ header.site-nav{
     font-family: $logo-font;
     a{
       color: $theme-font-color;
+      &::after{
+        content: none;
+      }
     }
   }
   a{

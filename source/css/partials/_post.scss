@@ -26,6 +26,13 @@ article#post-excerpt{
         right: 0;
       }
     }
+    a.post-category{
+      color: #8a8a8a;
+      font-weight: normal;
+      &::after{
+        content: none;
+      }
+    }
     .post-meta{
       .post-time{
         color: #8a8a8a;
@@ -80,13 +87,8 @@ article.post{
       blockquote{
         font: 14px/22px helvetica, sans-serif;
         font-style: italic;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 20px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
+        margin: 10px 10px 10px 20px;
+        padding: 10px 10px 10px 15px;
         border-left: 3px solid #ccc;
         background-color:#f1f1f1;
       }

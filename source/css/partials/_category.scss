@@ -7,7 +7,21 @@
   ul{
     border-left: 1px dashed #aaa;
     margin-left: 20px;
+    margin-top: 40px;
     padding: 0;
+    position: relative;
+    &::before{
+      position: absolute;
+      top: -10px;
+      left: -6px;
+      content: "";
+      display: inline-block;
+      box-sizing: border-box;
+      border: 1px solid #555;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+    }
     li{
       font-size: 20px;
       list-style: none;
