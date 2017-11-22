@@ -47,11 +47,12 @@
     }
   }
   .category-item-name{
+    font-family: Athelas;
     font-weight: normal;
-    font-style: italic;
     border-left: 2px solid $main-red;
     line-height: 1;
     padding-left: 20px;
+    color: #9d9d9d;
     i{
       font-size: 26px;
     }
