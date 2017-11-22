@@ -1,42 +1,42 @@
-  <article class="post">
-    <%- partial('_partials/gallery') %>
-    <header>
-      <div class="post-title mobile-post-title">
-        <h1><%= page.title %></h1>
-          <div class="post-tags">
-          <% if (page.tags && page.tags.length){ %>
-            <%- list_tags(page.tags, {
-              show_count: false,
-              style: 'none',
-              separator: ' '
-            }) %>
-          <% } %>
-          </div>
-      </div>
-      <div class="post-meta">
-        <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(page.date,"YYYY-MM-DD")%></span>
-        <% if (page.categories && page.categories.length){ %>
-            <% page.categories.each(function(sorting){ %>
-              <i class="iconfont icon-divide"></i>
-              <i class="iconfont icon-folder"></i>
-              <a href="<%= url_for(sorting.path) %>" style="color: #8a8a8a;font-weight: normal;font-family: Athelas;font-size: 14px"><%= sorting.name %></a>
-            <% }) %>
+<article class="post">
+  <%- partial('_partials/gallery') %>
+  <header>
+    <div class="post-title mobile-post-title">
+      <h1><%= page.title %></h1>
+        <div class="post-tags">
+        <% if (page.tags && page.tags.length){ %>
+          <%- list_tags(page.tags, {
+            show_count: false,
+            style: 'none',
+            separator: ' '
+          }) %>
         <% } %>
-        <!----------------------------------->
-          <% if (theme.leancloud.app_id && theme.leancloud.app_key){ %>
-            <i class="iconfont icon-divide"></i>
-            <div class="post-visits"
-                 data-url="<%- url_for(page.path) %>"
-                 data-title="<%- page.title %>">
-                <%- __('posts.visits') %>
-              </div>
-          <% } %>
-        <!----------------------------------->
-      </div>
-    </header>
-    <%- partial('_partials/toc') %>
-    <div class="post-content">
-      <%- page.content %>
+        </div>
     </div>
-    <div class="post-footer">the end</div>
-  </article>
+    <div class="post-meta">
+      <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(page.date,"YYYY-MM-DD")%></span>
+      <% if (page.categories && page.categories.length){ %>
+          <% page.categories.each(function(sorting){ %>
+            <i class="iconfont icon-divide"></i>
+            <i class="iconfont icon-folder"></i>
+            <a class="post-category" href="<%= url_for(sorting.path) %>"><%= sorting.name %></a>
+          <% }) %>
+      <% } %>
+      <!----------------------------------->
+        <% if (theme.leancloud.app_id && theme.leancloud.app_key){ %>
+          <i class="iconfont icon-divide"></i>
+          <div class="post-visits"
+               data-url="<%- url_for(page.path) %>"
+               data-title="<%- page.title %>">
+              <%- __('posts.visits') %>
+            </div>
+        <% } %>
+      <!----------------------------------->
+    </div>
+  </header>
+  <%- partial('_partials/toc') %>
+  <div class="post-content">
+    <%- page.content %>
+  </div>
+  <div class="post-footer">the end</div>
+</article>

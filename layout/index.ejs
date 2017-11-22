@@ -1,52 +1,52 @@
-  <section class="posts">
-    <% page.posts.each(function (post) { %>
-      <article class="post" id="post-excerpt">
-        <header>
-          <div class="post-title">
-            <h1><a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
-          </div>
-          <div class="post-meta">
-            <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(post.date,"YYYY-MM-DD")%></span>
-            <% if (post.categories && post.categories.length){ %>
-                <% post.categories.each(function(sorting){ %>
-                  <i class="iconfont icon-divide"></i>
-                  <i class="iconfont icon-folder"></i>
-                  <a class="post-category" href="<%= url_for(sorting.path) %>"style="color: #8a8a8a;font-weight: normal;font-family: Athelas;font-size: 14px"><%= sorting.name %></a>
-                <% }) %>
-            <% } %>
-            <!---------------------------------------->
-              <% if (theme.leancloud.app_id && theme.leancloud.app_key){ %>
-                <i class="iconfont icon-divide"></i>
-                <div class="post-visits"
-                     data-url="<%- url_for(post.path) %>"
-                     data-title="<%- post.title %>">
-                    <%- __('posts.visits') %>
-                  </div>
-              <% } %>
-          <!----------------------------------------->
-          </div>
-        </header>
-        <div class="post-content">
-          <!-------------->
-          <%if(post.excerpt){%>
-            <%-post.excerpt%>
-            <div id="read-more">
-              <a href="<%= url_for(post.path) %>"><%= __('posts.readmore') %></a>
-            </div>
-          <%}else{%>
-            <%- post.content %>
-          <%}%>
-          <!-------------->
+<section class="posts">
+  <% page.posts.each(function (post) { %>
+    <article class="post" id="post-excerpt">
+      <header>
+        <div class="post-title">
+          <h1><a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a></h1>
         </div>
-        <div class="post-tags">
-  		  <% if (post.tags && post.tags.length){ %>
-          <%- list_tags(post.tags, {
-            show_count: false,
-            style: 'none',
-            separator: ' '
-          }) %>
-        <% } %>
-  	  </div>
-      </article>
-    <%  }) %>
-  </section>
+        <div class="post-meta">
+          <span class="post-time"><i class="iconfont icon-calendar"></i><%- date(post.date,"YYYY-MM-DD")%></span>
+          <% if (post.categories && post.categories.length){ %>
+              <% post.categories.each(function(sorting){ %>
+                <i class="iconfont icon-divide"></i>
+                <i class="iconfont icon-folder"></i>
+                <a class="post-category" href="<%= url_for(sorting.path) %>"><%= sorting.name %></a>
+              <% }) %>
+          <% } %>
+          <!---------------------------------------->
+            <% if (theme.leancloud.app_id && theme.leancloud.app_key){ %>
+              <i class="iconfont icon-divide"></i>
+              <div class="post-visits"
+                   data-url="<%- url_for(post.path) %>"
+                   data-title="<%- post.title %>">
+                  <%- __('posts.visits') %>
+                </div>
+            <% } %>
+        <!----------------------------------------->
+        </div>
+      </header>
+      <div class="post-content">
+        <!-------------->
+        <%if(post.excerpt){%>
+          <%-post.excerpt%>
+          <div id="read-more">
+            <a href="<%= url_for(post.path) %>"><%= __('posts.readmore') %></a>
+          </div>
+        <%}else{%>
+          <%- post.content %>
+        <%}%>
+        <!-------------->
+      </div>
+      <div class="post-tags">
+      <% if (post.tags && post.tags.length){ %>
+        <%- list_tags(post.tags, {
+          show_count: false,
+          style: 'none',
+          separator: ' '
+        }) %>
+      <% } %>
+    </div>
+    </article>
+  <%  }) %>
+</section>

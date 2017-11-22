@@ -103,15 +103,22 @@
   }
   .category-container ul li a.category-item{
      font-size: 18px;
+     margin: 5px 0 0;
      i{
        font-size: 22px;
      }
    }
-   .category-container .category-item a .category-title{
-     font-size: 16px;
-   }
-   .category-container .category-item a time{
-     font-size: 12px;
+   .category-container{
+     padding: 30px 20px;
+     .category-item a{
+       padding: 5px;
+       .category-title{
+         font-size: 16px;
+       }
+       time{
+         font-size: 12px;
+       }
+     }
    }
   .pagination.post-nav{
     height: 80px;
