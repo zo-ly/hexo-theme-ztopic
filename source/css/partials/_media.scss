@@ -101,8 +101,11 @@
       }
     }
   }
-  .category-container ul li {
-   font-size: 18px;
+  .category-container ul li a.category-item{
+     font-size: 18px;
+     i{
+       font-size: 22px;
+     }
    }
    .category-container .category-item a .category-title{
      font-size: 16px;
