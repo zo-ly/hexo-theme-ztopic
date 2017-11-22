@@ -10,7 +10,7 @@
           <% if (post.categories && post.categories.length){ %>
               <% post.categories.each(function(sorting){ %>
                 <i class="iconfont icon-divide"></i>
-                <i class="iconfont icon-folder"></i>
+                <i class="iconfont icon-folder" style="color: #8a8a8a;"></i>
                 <a class="post-category" href="<%= url_for(sorting.path) %>"><%= sorting.name %></a>
               <% }) %>
           <% } %>
