@@ -15,10 +15,10 @@
     var $backToTop = $('#back-to-top');
 
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 100) {
-        $backToTop.fadeIn(1000);
+      if ($(window).scrollTop() > 1000) {
+        $backToTop.show();
       } else {
-        $backToTop.fadeOut(1000);
+        $backToTop.hide();
       }
     });
 
@@ -89,20 +89,20 @@
   };
 
   myFunc.throttle = function (func, wait, mustRun) {
-       var timeout
-       var startTime = new Date()
+       var timeout;
+       var startTime = new Date();
 
        return function () {
-         var context = this
-         var args = arguments
-         var curTime = new Date()
+         var context = this;
+         var args = arguments;
+         var curTime = new Date();
 
-         clearTimeout(timeout)
+         clearTimeout(timeout);
          if (curTime - startTime >= mustRun) {
            func.apply(context, args)
-           startTime = curTime
+           startTime = curTime;
          } else {
-           timeout = setTimeout(func, wait)
+           timeout = setTimeout(func, wait);
          }
        }
      };
