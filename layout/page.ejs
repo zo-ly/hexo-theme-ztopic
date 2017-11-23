@@ -40,7 +40,11 @@
     </div>
     <ul>
     <%site.categories.each(function(sorting){%>
-      <li><a class="category-item" href="<%= url_for(sorting.path) %>"><i class="iconfont icon-folder"></i><%= sorting.name %></a></li>
+      <li>
+        <a class="category-item" href="<%= url_for(sorting.path) %>">
+          <i class="iconfont icon-folder"></i><%= sorting.name %><span>(<%= sorting.length %>)</span>
+        </a>
+      </li>
     <%})%>
     </ul>
   </div>

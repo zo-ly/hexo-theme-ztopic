@@ -102,15 +102,22 @@
       }
     }
   }
-  .category-container ul li a.category-item{
-     font-size: 16px;
-     margin: 5px 0 0;
-     i{
-       font-size: 22px;
-     }
-   }
-   .category-container{
+  .category-container{
      padding: 30px 20px;
+     ul{
+       margin-left: 20px;
+       li a.category-item{
+          font-size: 16px;
+          i{
+            font-size: 22px;
+          }
+        }
+     }
+     a.category-item{
+       span{
+         font-size: 14px;
+       }
+     }
      .category-item a{
        padding: 5px;
        .category-title{
