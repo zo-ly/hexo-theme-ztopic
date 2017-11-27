@@ -3,6 +3,10 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+html,
+body{
+  height:100%
+}
 body{
   margin: 0;
   font-size: 100%;
@@ -25,4 +29,12 @@ main{
 .page{
   background: #eaeaea;
   height: 100%;
+  &>.container{
+    min-height: 100%;
+    padding-bottom: $footer-height;
+    overflow: hidden;
+  }
+  &>footer{
+    margin-top: -$footer-height;
+  }
 }

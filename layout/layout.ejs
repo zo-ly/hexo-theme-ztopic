@@ -9,6 +9,7 @@
     </div>
   </div>
   <div class="page" id="mobile-nav-panel">
+    <div class="container">
       <%- partial('_partials/header') %>
       <%- partial('_partials/banner') %>
       <main class="main"id="main">
@@ -16,6 +17,7 @@
           <%- partial('_partials/pagination') %>
           <%- partial('_partials/comments') %>
       </main>
+    </div>
     <%- partial('_partials/footer') %>
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont icon-up"></i>
@@ -26,9 +28,9 @@
   <%- js('libs/jQuery/jquery-3.2.1.min.js') %>
   <%- js('libs/slideout/slideout.min.js') %>
   <% if (theme.fancybox){ %>
-    <%- css('libs/fancybox/jquery.fancybox.css') %>
     <%- js('libs/fancybox/jquery.fancybox.pack.js') %>
   <% } %>
+  <%- partial('_widget/leancloud') %>
   <%- js('js/ztopic.js') %>
 </body>
 </html>
