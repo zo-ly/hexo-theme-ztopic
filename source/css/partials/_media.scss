@@ -15,6 +15,10 @@
 }
 
 @media only screen and (max-width: 800px){
+  html,
+  body{
+    height: auto;
+  }
   .mobile-header{
     display: block;
   }
@@ -84,7 +88,7 @@
     }
   }
   .archives-container{
-    min-height: 300px;
+    min-height: 400px;
     padding: 15px 20px 30px;
     .archive-year{
       font-size: 24px;
@@ -133,7 +137,7 @@
      }
    }
    .tags-container{
-     min-height: 300px;
+     min-height: 400px;
      padding: 30px 20px;
      .tags-content{
        margin-top: 20px;
