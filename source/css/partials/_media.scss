@@ -84,6 +84,7 @@
     }
   }
   .archives-container{
+    min-height: 300px;
     padding: 15px 20px 30px;
     .archive-year{
       font-size: 24px;
@@ -132,6 +133,7 @@
      }
    }
    .tags-container{
+     min-height: 300px;
      padding: 30px 20px;
      .tags-content{
        margin-top: 20px;
