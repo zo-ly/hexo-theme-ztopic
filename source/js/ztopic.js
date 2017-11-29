@@ -1,5 +1,6 @@
 (function (window) {
   $(document).ready(function () {
+    myFunc.footerStay();
     myFunc.backToTop();
     myFunc.navAnimation();
     myFunc.toc();
@@ -10,6 +11,14 @@
   'use strict';
 
   var myFunc = {};
+
+  myFunc.footerStay = function(){
+    var win = $(window);
+    var content = $(".page>.container");
+    if(win.width() <= 800){
+      content.css({minHeight: content.height()<win.height() ? win.height():content.height()});
+    }
+  }
 
   myFunc.backToTop = function () {
     var $backToTop = $('#back-to-top');

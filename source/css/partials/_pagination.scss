@@ -1,5 +1,4 @@
 .pagination{
-  height: 40px;
   margin: 0 auto;
   font-weight: bold;
   i{
@@ -9,6 +8,7 @@
   .next-post,
   .next{
     float: right;
+    margin-bottom: 10px;
     color: #34495e;
     font-size: 16px;
     text-decoration: none;
@@ -21,6 +21,7 @@
   .prev-post,
   .prev{
     float: left;
+    margin-bottom: 10px;
     color: #34495e;
     font-size: 16px;
     text-decoration: none;

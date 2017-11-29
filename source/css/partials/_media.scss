@@ -19,6 +19,9 @@
   body{
     height: auto;
   }
+  .page>.container{
+    padding-bottom: 190px;
+  }
   .mobile-header{
     display: block;
   }
@@ -54,7 +57,6 @@
   }
   article.post{
     padding: 10px;
-    margin: 0 auto 20px;
     .post-meta{
       .post-time{
         font-size: 14px;
@@ -144,17 +146,18 @@
      }
    }
   .pagination.post-nav{
-    height: 80px;
     margin: 0 16px;
     a{
       text-decoration: none;
     }
     .next-post{
+      margin: 0;
       float: none;
       display: block;
       color: #0099cc;
     }
     .prev-post{
+      margin: 0;
       float: none;
       display: block;
       color: #0099cc;
