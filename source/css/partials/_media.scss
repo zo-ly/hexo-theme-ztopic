@@ -19,6 +19,9 @@
   body{
     height: auto;
   }
+  .page>.container{
+    padding-bottom: 190px;
+  }
   .mobile-header{
     display: block;
   }
@@ -148,13 +151,11 @@
       text-decoration: none;
     }
     .next-post{
-      margin: 0;
       float: none;
       display: block;
       color: #0099cc;
     }
     .prev-post{
-      margin: 0;
       float: none;
       display: block;
       color: #0099cc;
