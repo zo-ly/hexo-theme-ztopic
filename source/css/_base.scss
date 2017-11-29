@@ -31,7 +31,7 @@ main{
   height: 100%;
   &>.container{
     min-height: 100%;
-    padding-bottom: 210px;
+    padding-bottom: $footer-height;
     overflow: hidden;
   }
   &>footer{
