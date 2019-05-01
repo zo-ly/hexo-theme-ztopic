@@ -1,8 +1,8 @@
 # hexo-theme-ztopic
-a simple theme for Hexo http://zccblog.cn/
+a simple theme for Hexo https://zccblog.cn/
 
 #### 说明
-[在线预览](http://zccblog.cn)
+[在线预览](https://zccblog.cn)
 
 一个简单的 hexo主题
 #### 安装
