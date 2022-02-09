@@ -2,7 +2,7 @@
 a simple theme for Hexo
 
 #### 说明
-[在线预览 DEMO](https://zo-ly.github.io/)
+[在线预览 DEMO](https://zo-ly.github.io/blog)
 
 一个简单的 hexo主题
 #### 安装
