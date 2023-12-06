@@ -46,8 +46,8 @@ leancloud:
 # comments
 # Valine comment system. https://valine.js.org
 valine:
-  comment_name: 留言板 #your comment area title
-  enable: true # if you want use valine, please set this value to true
+  enable: false # if you want use valine, please set this value to true
+  comment_name: 留言板 # your comment area title
   app_id:  # your leancloud appId
   app_key:  # your leancloud appKey
   notify: false # Mail notify
@@ -57,10 +57,28 @@ valine:
   guest_info: nick,mail,link # Comment header info
   pageSize: 10 # comment list page size
 
+# Giscus
+# Giscus Configration: https://giscus.app
+giscus:
+  enable: false
+  comment_name: 欢迎留言~ # your comment area title
+  repo: # giscus repo
+  repo_id: # giscus repo-id
+  category: # giscus data-category
+  category_id: # giscus data-category-id
+  mapping: # giscus data-mapping
+  strict: 0 # giscus data-strict
+  reactions_enabled: 0 # giscus data-reactions-enabled
+  emit_metadata: 0 # giscus data-emit-metadata
+  input_position: # giscus data-input-position
+  theme: light # giscus data-theme
+  lang: zh-CN # giscus data-lang
+  loading: lazy # giscus data-loading
+
 #disqus
 disqus_shortname:
 
 
 # ==================================
-version: 1.0
+version: 1.1
 # ==================================

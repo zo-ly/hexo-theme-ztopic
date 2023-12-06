@@ -1,7 +1,9 @@
-<% if(!is_home() && !is_archive()){ %>
-  <% if(page.comments && theme.disqus_shortname && theme.disqus_shortname.length > 0){ %>
-  <%- partial('_thirdParty/disqus') %>
-  <% } else if(page.comments && theme.valine.app_id && theme.valine.app_key){ %>
+<% if(!is_home() && !is_archive() && page.comments){ %>
+  <% if(theme.disqus_shortname && theme.disqus_shortname.length > 0){ %>
+    <%- partial('_thirdParty/disqus') %>
+  <% } else if(theme.valine.enable){ %>
     <%- partial('_thirdParty/valine') %>
-  <% } %>
+  <% } else if(theme.giscus.enable){ %>
+    <%- partial('_thirdParty/giscus') %>
+  <% }%>
 <% } %>
