@@ -21,7 +21,7 @@
           <span>
           <% var current = date(Date.now(),'YYYY') %>
           &copy;
-          <% if(theme.since && theme.since != current){ %>
+          <% if(config.since && config.since != current){ %>
             <%= config.since %> - <%= current %>
           <% }else{ %>
             <%= current %>
