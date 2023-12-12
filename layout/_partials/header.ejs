@@ -5,9 +5,9 @@
         </div>
         <nav class="navbar">
           <ul>
-            <% for(name in theme.menu) { %>
+            <% for (const [key, value] of Object.entries(theme.menu)) { %>
               <li class="menu-item">
-                <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><i class="iconfont icon-<%= name %>"></i><%= __('menu.' + name) %></a>
+                <a href="<%- url_for(value) %>" class="menu-item-link"><i class="iconfont icon-<%= key %>"></i><%= __('menu.' + key) %></a>
               </li>
             <% } %>
           </ul>

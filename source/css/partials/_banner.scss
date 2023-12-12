@@ -7,12 +7,15 @@
     height: 500px;
     background: $main-color;
     color: $theme-font-color;
-    text-align: center;
-    div.banner-title{
+    text-align: left;
+    .banner-title{
       position: absolute;
-      left: 18%;
+      width: 100%;
+      max-width: 960px;
+      padding-left: 16px;
+      transform: translateX(-50%);
+      left: 50%;
       top: 36%;
-      margin: 0;
       font-family: $art-font;
       .post-title{
         font-size: 36px;

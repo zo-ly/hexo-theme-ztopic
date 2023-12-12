@@ -44,7 +44,7 @@
   article#post-excerpt{
     header {
       h1{
-        font-size: 22px;
+        font-size: 24px;
         margin: 0;
       }
       .post-meta{
@@ -56,10 +56,10 @@
     }
   }
   article.post{
-    padding: 10px;
+    padding: 15px 10px;
     .mobile-post-title > h1{
       border-left: 3px solid $main-color;
-      margin: -10px 0 0 -10px;
+      margin: -15px 0 0 -10px;
       padding: 12px 0 12px 10px;
     }
     .post-meta{
@@ -81,7 +81,7 @@
       }
     }
     $mobile-headings: (
-      h1: 20px,
+      h1: 24px,
       h2: 18px,
       h3: 16px,
       h4: 15px,

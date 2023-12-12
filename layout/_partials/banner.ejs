@@ -6,14 +6,14 @@
         <div class="post-title">
           <%= page.title %>
             <div class="post-tags">
-    		    <% if (page.tags && page.tags.length){ %>
-              <%- list_tags(page.tags, {
-                show_count: false,
-                style: 'none',
-                separator: ' '
-              }) %>
-            <% } %>
-    	      </div>
+              <% if (page.tags && page.tags.length){ %>
+                <%- list_tags(page.tags, {
+                  show_count: false,
+                  style: 'none',
+                  separator: ' '
+                }) %>
+              <% } %>
+              </div>
         </div>
       <%}else if(page.type && page.type === 'about'){%>
         <div class="about-title">

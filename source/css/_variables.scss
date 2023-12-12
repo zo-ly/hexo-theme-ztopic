@@ -29,11 +29,10 @@ $footer-height: 170px !default;
   font-weight: normal;
   font-style: normal;
 }
-// Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
 // Serif font family of the site.
-$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+// $global-serif-font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !default;
+$global-serif-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
 //art font family
 $art-font: 'Satisfy', cursive, LiSu, sans-serif !default;

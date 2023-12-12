@@ -9,9 +9,9 @@ fancybox: true
 menu:
   home: /
   archive: /archives
-  #category: /categories
-  #tags: /tags
-  about: /about
+  # category: /categories
+  # tags: /tags
+  # about: /about
 
 # site logo introduce and footer quote
 # ====================================
