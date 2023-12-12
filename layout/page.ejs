@@ -1,6 +1,6 @@
 <%if(page.type && page.type==="about"){%>
     <div id="about">
-      <article class="post">
+      <article class="post about">
         <header>
           <div class="post-title mobile-post-title">
             <h1><%= page.title %></h1>
@@ -19,11 +19,13 @@
         <%- _p('counter.tagcloud', site.tags.length)  %>
       </div>
       <div class="tags-content">
-        <%- tagcloud({
-          amount: 100,
-          min_font: 16,
-          max_font: 28,
-        }) %>
+        <div class="tags-detail">
+          <%- tagcloud({
+            amount: 100,
+            min_font: 16,
+            max_font: 28,
+          }) %>
+        </div>
       </div>
     </div>
   </div>

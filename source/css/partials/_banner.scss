@@ -17,6 +17,9 @@
       left: 50%;
       top: 36%;
       font-family: $art-font;
+      .intro {
+        opacity: 0;
+      }
       .post-title{
         font-size: 36px;
         font-family: $global-serif-font-family;

@@ -24,6 +24,7 @@
       padding: 5px 0;
     }
     .mobile-intro{
+      opacity: 0;
       text-align: center;
       width: 150px;
       font-family: $art-font;
@@ -77,12 +78,18 @@
     }
   }
   .mobile-logo{
+    opacity: 0;
     text-align: center;
     a{
       font-size: 30px;
       text-decoration: none;
       font-family: $logo-font;
       margin-right: 42px;
+    }
+    .mobile-intro-placeholder {
+      font-family: $art-font;
+      opacity: 0;
+      height: 0;
     }
   }
 }

@@ -6,6 +6,7 @@
     myFunc.toc();
     myFunc.mobileNavbar();
     myFunc.fancybox();
+    myFunc.showArtFontWhenFontsReady();
   });
 
   'use strict';
@@ -98,23 +99,23 @@
   };
 
   myFunc.throttle = function (func, wait, mustRun) {
-       var timeout;
-       var startTime = new Date();
+      var timeout;
+      var startTime = new Date();
 
-       return function () {
-         var context = this;
-         var args = arguments;
-         var curTime = new Date();
+      return function () {
+        var context = this;
+        var args = arguments;
+        var curTime = new Date();
 
-         clearTimeout(timeout);
-         if (curTime - startTime >= mustRun) {
-           func.apply(context, args)
-           startTime = curTime;
-         } else {
-           timeout = setTimeout(func, wait);
-         }
-       }
-     };
+        clearTimeout(timeout);
+        if (curTime - startTime >= mustRun) {
+          func.apply(context, args)
+          startTime = curTime;
+        } else {
+          timeout = setTimeout(func, wait);
+        }
+      }
+    };
 
   myFunc.navAnimation = function (){
     var beforeScroll = 0,afterScroll = 0;
@@ -135,7 +136,6 @@
 
   myFunc.mobileNavbar = function(){
     var mbToggle = $("#mobile-nav-toggle");
-    var mbNav = $(".mobile-header");
     var slideout = new Slideout({
       'panel': document.getElementById("mobile-nav-panel"),
       'menu': document.getElementById("mobile-nav-menu"),
@@ -172,12 +172,18 @@
       $('.fancybox').fancybox({
         openEffect: 'elastic',
         closeEffect: 'elastic',
-		    closeBtn		: false,
-		    helpers : {
-			  title	: { type : 'outside' },
-		    }
+        closeBtn: false,
+        helpers: {
+          title: { type : 'outside' },
+        }
       });
     }
+  }
+
+  myFunc.showArtFontWhenFontsReady = function() {
+    document.fonts.ready.then(() => {
+      $('.logo, .mobile-logo, .banner-title .intro, .mobile-intro').css({ opacity: 1 })
+    })
   }
 
   window.myFunc = myFunc;
