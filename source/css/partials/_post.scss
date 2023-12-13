@@ -47,22 +47,27 @@ article#post-excerpt{
       }
     }
   }
-  .post-tags a{
-    display: inline-block;
-    color: #34495e;
-    background: #eee;
-    margin: 10px;
-    border: 1px solid #eee;
-    border-radius: 2px;
-    padding: 0 10px;
-    font-size: 12px;
-    transition: all .3s;
-    &:before{
-      content: "#";
-      font-size: 16px;
-    }
-    &:hover{
-      transform: translateY(-5px);
+  .post-tags {
+    padding: 10px 5px 0;
+    margin: 0;
+    border-top: 1px dashed #eaeaea;
+
+    a {
+      display: inline-block;
+      color: #34495e;
+      background: #eaeaea;
+      border: 1px solid #eee;
+      border-radius: 2px;
+      padding: 0 10px;
+      font-size: 12px;
+      transition: all .3s;
+      &:before{
+        content: "#";
+        font-size: 16px;
+      }
+      &:hover{
+        transform: translateY(-5px);
+      }
     }
   }
 }
@@ -88,13 +93,37 @@ article.post{
       color: $main-red;
     }
   }
+
+  ul,
+  ol {
+    margin: 0.8em 0;
+  }
+  li > ol,
+  li > ul {
+    margin: 0 0;
+  }
+  ul,
+  ol {
+    padding-left: 30px;
+  }
+
+  ul:first-child,
+  ol:first-child {
+    margin-top: 0;
+  }
+
+  ul:last-child,
+  ol:last-child {
+    margin-bottom: 0;
+  }
+
   blockquote{
     font: 14px/22px helvetica, sans-serif;
-    font-style: italic;
-    margin: 10px 10px 10px 20px;
-    padding: 10px 10px 10px 15px;
-    border-left: 3px solid #ccc;
-    background-color:#f1f1f1;
+    border-left: 4px solid #298efa;
+    padding: 5px 15px;
+    color: #777;
+    background-color: rgba(0, 102, 255, .1);
+    margin: 1em 0;
   }
   .post-meta{
     .post-time{
@@ -125,13 +154,19 @@ article.post{
     background: #fff;
     padding: 5px;
   }
+
   .post-tags{
-    margin-bottom: 10px;
-    a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px 0 10px;
+
+    a {
       display: inline-block;
       text-decoration: none;
       color: $main-color;
-      margin: 5px;
       border: 1px solid $main-color;
       border-radius: 2px;
       padding: 0 5px;
@@ -165,12 +200,12 @@ article.post{
     }
   }
   #read-more{
-    margin: 40px 0;
+    padding: 10px 0 20px;
     text-align: center;
-    a{
+    a {
       font-weight: normal;
       color: $main-font-color;
-      padding: 5px;
+      padding: 5px 20px;
       border: 1px solid $main-font-color;
       border-radius: 2px;
       transition: all .3s;

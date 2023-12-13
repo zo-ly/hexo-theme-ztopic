@@ -23,23 +23,31 @@
       .post-title{
         font-size: 36px;
         font-family: $global-serif-font-family;
-        .post-tags a{
-          display: inline-block;
-          text-decoration: none;
-          color: $theme-font-color;
-          margin: 10px;
-          border: 1px solid $theme-font-color;
-          border-radius: 2px;
-          padding: 0 10px;
-          font-size: 12px;
-          transition: all .3s;
-          &:before{
-            content: "#";
-            font-size: 16px;
-          }
-          &:hover{
-            background: $theme-font-color;
-            color: $main-color;
+        .post-tags {
+          padding: 20px 0 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 5px;
+
+          a {
+            display: inline-block;
+            text-decoration: none;
+            color: $theme-font-color;
+            border: 1px solid $theme-font-color;
+            border-radius: 2px;
+            padding: 0 10px;
+            font-size: 14px;
+            transition: all .3s;
+            &:before{
+              content: "#";
+              font-size: 16px;
+            }
+            &:hover{
+              background: $theme-font-color;
+              color: $main-color;
+            }
           }
         }
       }

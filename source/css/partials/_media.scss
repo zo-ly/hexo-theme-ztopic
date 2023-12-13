@@ -51,8 +51,8 @@
         margin-bottom: 0;
       }
     }
-    .post-tags a{
-        padding: 0;
+    .post-tags a {
+      padding: 0 5px;
     }
   }
 
@@ -82,10 +82,8 @@
       }
     }
     #read-more{
-      margin: 5px 0;
       a{
         font-size: 14px;
-        padding: 3px;
       }
     }
     $mobile-headings: (
@@ -103,13 +101,13 @@
     }
   }
   .archives-container{
-    min-height: 400px;
-    padding: 15px 20px 30px;
+    padding: 15px;
+    .tag-title {
+      margin: 0;
+    }
+
     .archive-year{
-      font-size: 24px;
-      padding: 0 10px;
-      margin: 15px 0 5px 10px;
-      border-left: 2px solid $main-red;
+      margin: 10px 0;
     }
     .archive-article{
       padding: 5px;

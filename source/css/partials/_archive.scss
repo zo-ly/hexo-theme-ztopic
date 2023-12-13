@@ -1,17 +1,31 @@
 .archives-container{
-  min-height: 400px;
-  padding: 30px 40px;
+  min-height: 300px;
+  padding: 20px;
   margin-bottom: 10px;
   background: #fff;
   box-shadow: 0 0 3px rgba(0,0,0,.15);
   border-radius: 2px;
-  .archive-year{
+
+  .tag-title {
+    font-weight: normal;
+    font-size: 26px;
+    padding-left: 20px;
+    border-left: 2px solid $main-red;
+    margin: 0 0 20px;
+  }
+
+  .archives-wrapper {
+    padding-left: 30px;
+  }
+
+  .archive-year {
     line-height: 1;
-    font-size: 30px;
-    margin: 10px 10px 15px;
+    font-size: 24px;
+    margin: 10px 0 15px;
     color: $main-font-color;
   }
-  .archive-article{
+
+  .archive-article {
     display: block;
     text-decoration: none;
     padding: 10px;
