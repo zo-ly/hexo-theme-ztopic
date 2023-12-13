@@ -8,20 +8,22 @@
 
   .tag-title {
     font-weight: normal;
-    font-size: 26px;
-    padding-left: 20px;
-    border-left: 2px solid $main-red;
+    font-size: 24px;
     margin: 0 0 20px;
+
+    i {
+      color: $main-red;
+    }
   }
 
   .archives-wrapper {
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   .archive-year {
     line-height: 1;
-    font-size: 24px;
-    margin: 10px 0 15px;
+    font-size: 26px;
+    margin: 15px 0;
     color: $main-font-color;
   }
 

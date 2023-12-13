@@ -1,7 +1,12 @@
 
   <div class="archives-container">
-    <h1 class="tag-title"><%= page.tag %></h1>
-    <div class="archives-wrapper">
+    <% if (page.tag) { %>
+      <h1 class="tag-title">
+        <i>#</i>
+        <%= page.tag %>
+      </h1>
+    <% } %>
+    <div class=<%= page.tag ? "archives-wrapper" : ''%>>
       <% var last; %>
       <% page.posts.each(function(post, i){ %>
         <% var year = post.date.year(); %>
@@ -11,15 +16,17 @@
           <% } %>
           <% last = year; %>
           <section class="archive-wrap">
-            <div class="archive-year">
-              <!-- <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a> -->
-              <%= year %>
-            </div>
+            <% if (!page.tag) { %>
+              <div class="archive-year">
+                <!-- <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a> -->
+                <%= year %>
+              </div>
+            <% } %>
             <div class="archives">
         <% } %>
         <div class="archive-content">
         <a class="archive-article" href="<%= url_for(post.path) %>">
-          <span class="archive-meta"><%= date(post.date, "MM-DD") %></span>
+          <span class="archive-meta"><%= date(post.date, page.tag ? "YYYY-MM-DD" : "MM-DD") %></span>
           <span class="archive-title"><%= post.title %></span>
         </a>
       </article>

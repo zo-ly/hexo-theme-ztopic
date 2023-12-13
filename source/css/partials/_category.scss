@@ -33,12 +33,13 @@
     }
   }
   .category-item-name{
+    font-size: 18px;
     margin: 0 0 20px;
     font-weight: normal;
     line-height: 1;
     padding-left: 20px;
     color: #9d9d9d;
-    i{
+    i {
       font-size: 26px;
     }
   }
@@ -52,6 +53,7 @@
       border-left: 3px solid transparent;
       cursor: pointer;
       time{
+        font-size: 16px;
         color: #8a8a8a;
       }
       .category-title{
