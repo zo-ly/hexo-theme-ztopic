@@ -28,13 +28,14 @@ main{
 }
 .page{
   background: #eaeaea;
-  height: 100%;
-  &>.container{
-    min-height: 100%;
-    padding-bottom: 210px;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+
+  > .container {
+    flex: 1;
     overflow: hidden;
-  }
-  &>footer{
-    margin-top: -$footer-height;
+    margin-bottom: 20px;
+    min-height: 96vh;
   }
 }

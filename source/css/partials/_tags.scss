@@ -2,7 +2,6 @@
   font-size: 24px;
   min-height: 300px;
   padding: 20px;
-  margin-bottom: 10px;
   background: #fff;
   box-shadow: 0 0 3px rgba(0,0,0,.15);
   display: flex;
@@ -16,13 +15,13 @@
 
   .tags-content {
     flex: 1;
+    margin-top: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
 
   .tags-detail{
-    width: 80%;
+    width: 90%;
     text-align: center;
     a{
       text-decoration: none;

@@ -19,9 +19,6 @@
   body{
     height: auto;
   }
-  .page>.container{
-    padding-bottom: 190px;
-  }
   .mobile-header{
     display: block;
   }
@@ -33,6 +30,9 @@
   }
   main{
     margin: 60px 16px 10px;
+  }
+  .page > .container {
+    min-height: auto;
   }
   .post .mobile-post-tilte{
     display: block;
@@ -100,8 +100,12 @@
       }
     }
   }
+  .tags-container {
+    min-height: 66dvh;
+  }
   .archives-container{
     padding: 15px;
+    min-height: 66dvh;
     .tag-title {
       margin: 0;
     }
